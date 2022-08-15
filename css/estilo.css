@@ -21,18 +21,53 @@ header{
     font-weight: bold;
     font-size: 21px;
     top: 0px;
-    background-color: rgb(244, 208, 63);
+    background-image: linear-gradient( to right,#F6D186,#F19292 ) ;
+    
+}
+.menu ul li{
+    color: #000;
+    position: relative;
+    text-decoration: none;
+    transition: all 1ms ease-in-out;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.menu ul li:hover{
+color: rgba(231, 210, 15, 0.979);
+}
+
+.menu ul li::before{
+    content: "";
+    position: absolute;
+    background: #CBE2B0;
+    inset: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease-in-out;
+    z-index: -1;
+}
+
+.menu ul li:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
 }
 
 header .imagenUno{
     width: 110px;
     height: 110px;
+    animation-name: girar;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
         
 }
 
 header h1{
     
     font-size: 80px;
+    
 }
 
 nav ul li{
@@ -46,6 +81,23 @@ nav ul li{
     text-align: left;
 } 
 
+.descripcion::first-letter{
+    color: #768fb5;
+    font-size: 2rem;
+    font-family: 'satisfy', cursive;
+
+}
+
+
+@keyframes girar{
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
 /*estilos Main del index*/
 
 main div h3{
@@ -83,10 +135,6 @@ main section ul img{
 
     margin: 13px;
     padding: 13px;
-   
-   
-    
-    
        
 }
 
@@ -106,12 +154,7 @@ main section button{
 }
 
 
-.menu ul li{
-    background-color: whitesmoke;
-    border-radius: 25px;
-    padding: 5px;
 
-}
 /*estilos footer */
 
 footer{
@@ -153,7 +196,7 @@ footer a{
 .sectionOpi{
     font-size: 20px;
     display: inline-block;
-    background-color: bisque;
+    background-color: #FCF7BB;
     
 
     
@@ -168,7 +211,7 @@ footer a{
     height: 350px;
     width: 350px;
     
-    background-color: bisque;
+    background-color: #FCF7BB;
     overflow: auto;
     
    
@@ -204,7 +247,7 @@ footer a{
     margin: 20px;
     padding: 20px;
     font-size: 25px;
-    background-color: bisque;
+    background-color: #FCF7BB;
 }
 
 .legUno{
@@ -251,7 +294,7 @@ footer a{
     justify-content: center;
     margin: 5px;
     padding: 5px;
-    background-color: bisque
+    background-color: #FCF7BB;
 
 }
 .envioUno{
