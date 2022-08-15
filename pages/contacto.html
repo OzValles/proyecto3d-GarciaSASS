@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--fuente-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <!--css-->
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>Pagina de Contacto</title>
+
+</head>
+
+
+<!--Aqui que estuvieran en un cuadro mejor para poder mandar sus datos y yo poder ver cual es su mensaje-->
+<body>
+
+    <header id="ir-arriba"> 
+        <!--Aqui iria el logo pero acomodado me gustaria que fuera en la parte de la derecha-->
+        <img src="../img/img1.png" class="imagenUno" alt="Logotipo de la compañia">
+        <h1 id="ir-arriba"> PLANET 3D</h1>
+    
+         <nav class="menu">
+        
+            <!--Esto acomodado de mejor manera para que se puedan ver los botones de una manera mas estetica-->
+            <ul>
+                <li> <a href="../index.html"> Inicio </a></li>
+                <li> <a href="opiniones.html"> Reseñas</a>  </li>
+                <li> <a href="formasdepago.html">Carrito</a> </li>
+                <li> <a href="cotizaciones.html"> Cotizacion  </a> </li>
+                <li> <a href="contacto.html"> Contacto  </a> </li>
+            </ul>
+           
+        </nav>
+        
+    </header> 
+    <main>
+        <div class="cotUno">
+            <h2>Contactanos</h2>
+        </div>
+
+        <section>
+            <form>
+                <fieldset class="formCot">
+                    <legend class="legUno"> Formulario de Contactos</legend>
+
+                    <div>
+                        <label for="nombre"> ¿Cual es tu Nombre? </label>
+                        <input type="text" name="nombre" id="nombre " placeholder="Coloca tu nombre" required>
+                    </div>
+                
+                    <div>
+                        <label for="email"> ¿Cual es tu email?</label>
+                        <input type="email" id="email" name="email" placeholder="Coloca tu email" required>
+                    </div>
+
+                    <div>
+                        <label for="pais"> Coloca tu pais</label>
+                        <select name="pais" id="pais" required>
+                            <option value="Mexico"> Mexico</option>
+                            <option value="Colombia"> Colombia</option>
+                            <option value="Argentina"> Argentina</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <input type="date" name="fecha" id="fecha">
+                    </div>
+                
+                    <div>
+                        <textarea name="peticion" id="peticion" cols="40" rows="5" placeholder="Escriba su petición" required></textarea>
+                    </div>
+
+                    <div>
+                        <input type="submit" value="Enviar">
+                        <input type="reset"  value="Resetear formulario">
+                    </div>
+
+                </fieldset>
+            </form>
+        </section>
+        <div>
+            <h2 class="redUno">Redes Sociales</h2>
+        </div>
+        <section>
+            <!--Aqui que las redes sociales se vean mejores esteticamente con imagenes-->
+            <div>
+                <p class="cotDo">Instagram</p>
+                <a href="https://www.instagram.com/itsmyplanet3d/" target="_blank"><img class="imgCon" src="https://www.empresaactual.com/wp-content/uploads/2022/01/instagram-2022.webp" alt="Imagen de instagram"></a>
+            </div>
+
+            <div>
+                <p class="cotDo">Correo Electronico</p>
+                <p class="cotDo"> itsmyplanet3d@gmail.com</p>
+                <img class="imgCon" src="../img/img8.jpg " alt="Imagen del correo electronico">
+            </div>
+        </section>
+    </main>
+
+    <footer id="ir-al-footer">
+        <h3>TODOS LOS DERECHOS RESERVADOS</h3>
+        <a href="#ir-arriba"> Ir al inicio </a>
+    </footer>
+</body>
+</html>

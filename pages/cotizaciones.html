@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--fuente-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+     <!--css-->
+     <link rel="stylesheet" href="../css/estilo.css">
+     <title>Pagina de Contacto</title>
+    <title>Cotizaciones</title>
+</head>
+
+<body>
+
+    <header id="ir-arriba"> 
+        <!--Aqui iria el logo pero acomodado me gustaria que fuera en la parte de la derecha-->
+        <img src="../img/img1.png" class="imagenUno" alt="Logotipo de la compañia">
+        <h1> PLANET 3D</h1>
+    
+         <nav class="menu">
+        
+            <!--Esto acomodado de mejor manera para que se puedan ver los botones de una manera mas estetica-->
+            <ul>
+                <li> <a href="../index.html"> Inicio </a></li>
+                <li> <a href="opiniones.html"> Reseñas</a>  </li>
+                <li> <a href="formasdepago.html">Carrito</a> </li>
+                <li> <a href="cotizaciones.html"> Cotizacion  </a> </li>
+                <li> <a href="contacto.html"> Contacto  </a> </li>
+            </ul>
+           
+        </nav>
+    </header> 
+
+    <main>
+        <div>
+            <h2 class="cotUno">Cotizaciones</h2>
+        </div>
+        <section>
+            <form>
+                <fieldset class="formCot">
+                    <legend class="legUno"> Formulario de Cotizaciones</legend>
+                    
+                <div>
+
+                    <label for="nombre"> ¿Cual es tu idea? </label>
+                    <textarea name="opinion" id="idea" cols="80" rows="3" placeholder="Escriba su idea" required></textarea>
+                </div>
+                    
+                <div>
+                    <label for="email"> ¿Cual es tu email?</label>
+                    <input type="email" name="email" id="email" placeholder="Coloca tu email">
+                </div>
+
+                <div class="inputTre">
+                    <label for="tamaño"> Define el color y el tamaño </label>
+                    <input type="text" name="tamaño" id="tamaño" placeholder="Coloca tu color y tamaño">
+                </div>
+
+                <div>
+                    <input type="submit" value="Enviar">
+                    <input type="reset"  value="Resetear">
+                </div>
+
+                </fieldset>
+            </form>
+        </section>
+
+        <div>
+            <h2 class="tablaUno"> Tabla de Costos</h2>
+        </div>
+
+        <section class="tablaDos">
+        <!--Quisiera poder poner como una visualizacion de lo que quiera y de que tama;o para que mediante una calculadora le calcule el costo y el tiempo que tarde-->
+            <table border="2" class="tablaTres">
+                <tbody>
+                    <tr class="tablaTre">
+                        <td> Costo por hora</td>
+                    </tr>
+
+                    <tr> 
+                        <td> 1 hora</td>
+                        <td> 30 pesos mexicanos</td>
+                    </tr>
+
+                    <tr>
+                        <td>2 horas</td>
+                        <td>50 pesos mexicanos</td>
+                    </tr>
+
+                    <tr>
+                        <td>3 horas</td>
+                        <td>80 pesos mexicanos</td>
+                    </tr>
+                    <tr>
+                        <td>4 horas</td>
+                        <td>110 pesos mexicanos</td>
+                    </tr>
+                    <tr>
+                        <td>5 horas</td>
+                        <td>140 pesos mexicanos</td>
+                    </tr>
+                    <tr>
+                        <td>10 horas</td>
+                        <td>300 pesos mexicanos</td>
+                    </tr>
+
+                    <tr>
+                        <td>20 horas</td>
+                        <td>600 pesos mexicanos</td>
+                    </tr>
+                    <tr>
+                        <td>Mas de 20 horas</td>
+                        <td>Favor de Mandar un email</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer id="ir-al-footer">
+        <h3>TODOS LOS DERECHOS RESERVADOS</h3>
+        <a href="#ir-arriba"> Ir al inicio </a>
+    </footer>
+    
+    
+</body>
+</html>
