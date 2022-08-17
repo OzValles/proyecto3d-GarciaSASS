@@ -12,6 +12,7 @@ body{
 
 header{
     height: 150px;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,14 +25,7 @@ header{
     background-image: linear-gradient( to right,#F6D186,#F19292 ) ;
     
 }
-.menu ul li{
-    color: #000;
-    position: relative;
-    text-decoration: none;
-    transition: all 1ms ease-in-out;
-    cursor: pointer;
-    padding: 10px;
-}
+
 
 
 
