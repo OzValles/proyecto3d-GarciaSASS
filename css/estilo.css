@@ -33,9 +33,7 @@ header{
     padding: 10px;
 }
 
-.menu ul li:hover{
-color: rgba(231, 210, 15, 0.979);
-}
+
 
 .menu ul li::before{
     content: "";
