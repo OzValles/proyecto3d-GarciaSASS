@@ -62,54 +62,70 @@
         </div>
     </header>
 
-        <div>   
-            <h2 class="opiH2"> Opiniones de los Clientes</h2>
-        </div>
-        
-    <main class="mainOpi">
-        <section class="sectionOpi">
-            
-            <ul>
-                <li> Juan Perez, Merida Yuc</li>
-                <p>Me gusto bastante los productos ya que estan bien hechos y el precio es el adecuado.</p>
-                <li> Oscar Martinez, Guadalajara Jal</li>
-                <p>Me meti a su pagina y encontre productos que facilitaron la forma de organizar mi oficina.</p>
-                <li> Laura Tortuga, CDMX</li>
-                <p>La comunicacion y el tiempo de entrega fue muy rapido.</p>
-            </ul>
+
+
+    <main class="container">
+        <section class="row">
+
+          <h2 class="text-center m-2 p-2 fs-1 fw-bold"> Opiniones de los Clientes</h2>
+
+          
         </section>
 
+        <div class="container text-center m-5 p-5 fs-4">
+          <div class="row">
+            <div class="col border border-warning fw-bold">
+              Juan Perez, Merida Yuc
+            </div>
+            <div class="col border border-warning">
+              Me gusto bastante los productos ya que estan bien hechos y el precio es el adecuado
+            </div>
+          </div>
+          <div class="row">
+            <div class="col border border-warning fw-bold">
+              Oscar Martinez, Guadalajara Jal
+            </div>
+            <div class="col border border-warning">
+              Me meti a su pagina y encontre productos que facilitaron la forma de organizar mi oficina
+            </div>
+            <div class="row">
+              <div class="col border border-warning fw-bold">
+                Laura Tortuga, CDMX
+              </div>
+              <div class="col border border-warning">
+                Me meti a su pagina y encontre productos que facilitaron la forma de organizar mi oficina
+              </div>
+            
+          </div>
+        </div>
+
         
-        <section class="sectionOpid">
-            <form>
-                <fieldset>
-                    <legend> Deja tu opinion</legend>
-                    <div>
-                        <textarea name="opinion" id="opinion" cols="40" rows="5" placeholder="Escriba su opinion" required></textarea>
-                </div>
-
-                    <div>
-                        <label for="email"> Dejanos tu correo </label>
-                        <input type="email" name="correo" id="correo " placeholder="Coloca tu correo" required>
-                    </div>
-
-                    <div>
-                        <input type="submit" value="Enviar">
-                        <input type="reset" value="Resetear">
-                    </div>
-
-                </fieldset>
-
-            </form>
+        
+           <div class="bg-warning m-5 p-5 fw-bold">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Dejanos tu correo</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="correo@example.com">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label" >Dejanos tu opinion</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+           </div>
+         
         </section>
     </main>
 
-    <footer class="footerUno">
-        <a class="carritoImg" href="pages/formasdepago.html"> <img src="../img/carrito.png" alt="Carrito de compras"></a>
-        <p class="irCarrito">Ir al Carrito de Compras</p>
-        <a class="irArriba" href="#Ir-arriba"> Ir arriba </a>
-        <h4 class="todos">TODOS LOS DERECHOS RESERVADOS</h4>
-    </footer>
+    <footer class="container">
+      <div class="row">
+
+        <div class="text-center">
+          <a class="carritoImg" href="../pages/formasdepago.html"> <img src="../img/carrito.png" alt="Carrito de compras"></a>
+          <p class="irCarrito">Ir al Carrito de Compras</p>
+            <p> TODOS LOS DERECHOS RESERVADOS</p>
+            <a href="#ir-arriba"> Ir al inicio </a>
+        </div class="text-center">
+      </div>
+  </footer>
 
      <!--javascript-->
     <!-- JavaScript Bundle with Popper -->
