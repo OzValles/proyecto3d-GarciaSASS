@@ -12,7 +12,6 @@ body{
 
 header{
     height: 150px;
-    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,7 +28,20 @@ header{
 
 
 
-.menu ul li::before{
+#menuUno ul li{
+    color: #000;
+    position: relative;
+    text-decoration: none;
+    transition: all 1ms ease-in-out;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#menuUno ul li:hover{
+color: rgba(231, 210, 15, 0.979);
+}
+
+#menuUno ul li::before{
     content: "";
     position: absolute;
     background: #CBE2B0;
@@ -41,7 +53,7 @@ header{
     z-index: -1;
 }
 
-.menu ul li:hover::before{
+#menuUno ul li:hover::before{
     transform: scaleX(1);
     transform-origin: left;
 }
@@ -230,17 +242,14 @@ footer a{
 
 .carritoImg{
 
-    width: 150px;
+    width: 50vh;
     height: 150px;
     margin: 5px;
     padding: 5px;
 
 }
 
-.carritoImg{
-    width: 250px;
-    height: 250px;
-}
+
 
 .imagenArt{
     display: flex;
@@ -348,22 +357,24 @@ justify-items: center;
 .footerUno{
     height: 40vh;
     display: grid;
-    grid-template-columns: auto auto ;
-    grid-template-rows:  0.5fr 1fr 1fr 0.5fr;
+    grid-template-columns: auto ;
+    grid-template-rows: auto auto auto auto;
     grid-template-areas:
-                         "carrito   carrito "
-                         "desc       desc "
-                         "todos     todos"
-                         " arriba   arriba";
+                         "carrito"
+                         "desc"
+                         "todos"
+                         "arriba";
                          
     justify-content: center;
     justify-items: center;
     align-items: center;
+    align-content: center;
    
 }
 
 .carritoImg{
     grid-area: carrito;
+    text-align: center;
 
 }
 
@@ -403,7 +414,7 @@ justify-items: center;
 /*media queries para moobile*/
 /*media queries de header*/
 
-@media screen and (max-width: 640px){
+@media screen and (max-width: 768px) and (min-width: 576px) {
 .primeraSeccion{
     display: flex;
     flex-direction: column;
@@ -411,7 +422,7 @@ justify-items: center;
 
     header h1{
     
-        font-size: 40px;
+        font-size: 3em;
     }
     header {
 
@@ -422,23 +433,67 @@ justify-items: center;
     }
 
     .mainIn{
-        grid-template-columns: 1fr;
+        height: 100%;
+        grid-template-columns: 0.5fr;
         grid-template-rows: auto auto auto;
         grid-template-areas: " cocina "
                              " gaming"
                              " oficina";
         justify-content: center;
         align-items: center;
+        align-content: center;
     }
+
+}
+/*media querie para telefonos*/
+
+@media screen and (max-width: 576px) and (min-width: 350px) {
+
+
+.primeraSeccion{
+     height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: "imagen"
+                             "quienes"
+                             "descripcion"
+                             "descripcionDos";
+}
+
+.puntoUno{
+    grid-area: quienes;
+}
+.descripcion{
+    grid-area: descripcion;
+}
+
+.descripcionDos{
+    grid-area: descripcionDos;
+
+}
+
+.imagenTiendas{
+    grid-area: imagen;
+}
+
+.mainIn{
+    height: 100%;
+    grid-template-columns: 0.5fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: " cocina "
+                         " gaming"
+                         " oficina";
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
 }
 
 
 
 
-
-
 /*media queri main de opiniones*/
-@media screen and (max-width: 640px){
+@media screen and (max-width: 768px) and (min-width: 573px) {
     .mainOpi{
         height: 80vh;
         display: grid;
@@ -454,4 +509,12 @@ justify-items: center;
         padding: 10px;
         margin: 10px;
     }
+}
+
+@media screen and (max-width: 576px) and (min-width: 350px) {
+
+header h1{
+    font-size: 60px;
+}
+
 }
