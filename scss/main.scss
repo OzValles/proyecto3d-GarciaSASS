@@ -1,0 +1,109 @@
+// unicamente hare de contizacion
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+//header
+
+@import "variables";
+
+header{
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    margin: 0px;
+    padding: $pagging;
+    font-weight: bold;
+    font-size: 21px;
+    top: 0px;
+    background-image: $color-gradiente;
+
+    .imagenUno{   width: 110px;
+        height: 110px;
+        animation-name: girar;
+        animation-duration: 20s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+            }
+
+    h1{
+        font-size: 80px;
+    }
+
+
+}
+@keyframes girar{
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+nav{
+    ul{
+        li{
+            list-style: none;
+            display: inline-block;
+        }
+    }
+}
+
+.tablaUno{
+    text-align: center;
+    font-size: 35px;
+}
+
+.tablaDos{
+    margin: $margin;
+    padding: $pagging;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cotUno{
+    margin: $margin;
+    padding: $pagging;
+    text-align: center;
+    font-size: 50px;
+}
+
+.formCot{
+    margin: $margin;
+    padding: $pagging;
+    font-size: 25px;
+    background-color: #FCF7BB;
+}
+
+.legUno{
+    font-weight: bold;
+}
+
+.tablaTres{
+    font-weight: bold;
+    text-align: center;
+}
+
+footer{
+    margin: $margin/2;
+    padding: $pagging/2;
+    font-size: 25px;
+    height: 500px;
+    font-weight: bold;
+    
+    h3{
+        text-align: center;
+    }
+
+    a{
+        margin: 0px;
+        padding: 0px;
+    }
+}

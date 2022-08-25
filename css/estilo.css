@@ -1,0 +1,77 @@
+body {
+  font-family: 'Raleway', sans-serif; }
+
+header {
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  margin: 0px;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 21px;
+  top: 0px;
+  background-image: linear-gradient(to right, #F6D186, #F19292); }
+  header .imagenUno {
+    width: 110px;
+    height: 110px;
+    animation-name: girar;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; }
+  header h1 {
+    font-size: 80px; }
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+nav ul li {
+  list-style: none;
+  display: inline-block; }
+
+.tablaUno {
+  text-align: center;
+  font-size: 35px; }
+
+.tablaDos {
+  margin: 20px;
+  padding: 20px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.cotUno {
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  font-size: 50px; }
+
+.formCot {
+  margin: 20px;
+  padding: 20px;
+  font-size: 25px;
+  background-color: #FCF7BB; }
+
+.legUno {
+  font-weight: bold; }
+
+.tablaTres {
+  font-weight: bold;
+  text-align: center; }
+
+footer {
+  margin: 10px;
+  padding: 10px;
+  font-size: 25px;
+  height: 500px;
+  font-weight: bold; }
+  footer h3 {
+    text-align: center; }
+  footer a {
+    margin: 0px;
+    padding: 0px; }
