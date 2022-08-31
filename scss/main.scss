@@ -1,11 +1,12 @@
-// unicamente hare de contizacion
+// unicamente hare de cotizacion
 body{
     font-family: 'Raleway', sans-serif;
 }
 
 //header
 
-@import "variables";
+
+@import "base/variables";
 
 header{
     height: 150px;
