@@ -1,6 +1,10 @@
 body {
   font-family: 'Raleway', sans-serif; }
 
+.tablaDos {
+  justify-content: center;
+  align-items: center; }
+
 header {
   height: 150px;
   display: flex;
@@ -29,6 +33,11 @@ header {
   to {
     transform: rotate(360deg); } }
 
+.sectionOpi ul li::first-letter {
+  color: #768fb5;
+  font-size: 1rem;
+  font-family: 'satisfy', cursive; }
+
 nav ul li {
   list-style: none;
   display: inline-block; }
@@ -41,9 +50,7 @@ nav ul li {
   margin: 20px;
   padding: 20px;
   height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  display: flex; }
 
 .cotUno {
   margin: 20px;
