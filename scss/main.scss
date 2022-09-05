@@ -104,77 +104,74 @@ nav{
 
 //estilos Main del index
 
-.primeraSeccion{
-    margin: $margin;
-    padding: $pagging;
-    text-align: left;
-
-}
-
 .descripcion::first-letter{
     @include primera-letra;
 }
 
-main{
-    div{
-        h3{
-            margin: $margin;
-            padding: $pagging;
-            text-align: center;
-            font-size: 50px;
-        }
-    }
-
-    h4{
-        margin: 10px 15px;
-        padding: 10px 15px;
-        text-align: center;
-        font-size: 40px;
-    }
-    section{
-        
-
-        ul{
-            img{
-                object-fit: cover;
-                width: 20vh;
-                margin:$margin/4;
-                padding:$pagging/4;
-                border: solid 1px black;
-            }
-        }
-        form{
-            margin: $margin/4;
-            padding: $pagging/4;
-            font-size: 20px;
-        }
-        button{
-            margin: $margin/4;
-            padding: $pagging/4;
-            font-size: 15px;
-            font-weight: bold;
-        }
-    }
-    
+.card{
+    width: 416px;
+    height: 299px;
+    position: relative;
+    color: #4a293b;
+    background: url('../img/img2.png') center no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
-section{
-        ul{
-            li{
-                margin: 5px 10px;
-                padding: 5px 10px;
-                font-size: 30px;
-                list-style: none;
-            }
-         }
+.cardContent{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(208, 181, 26);
+    border-top-left-radius: 20px;
+    transform: translateY(70px);
+    transition: transform .25s;
+
 }
 
-.mainIn{
-    section{
-    margin: 13px;
-    padding: 13px;
+.cardContent::before{
+    content: '';
+    position: absolute;
+    top: -47px;
+    right: -45px;
+    width: 100px;
+    height: 100px;
+    transform: rotate(-175deg);
+    border-radius: 50%;
+    box-shadow: inset 48px 48px rgb(203, 189, 34);
+}
+
+.cardTitle{
+    color: #6A515E;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.cardSub{
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.cardDesc{
+    font-size: 15px;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.card:hover {
+    .cardContent{
+    transform: translateY(0);
+    }
+
+    .cardDesc{
+        opacity: 1;
+        transition-delay: .25s;
     }
 }
+
 
 //scss del footer
 footer{
