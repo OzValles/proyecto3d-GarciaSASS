@@ -1,31 +1,65 @@
 body {
   font-family: 'Raleway', sans-serif; }
 
-.tablaDos {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.tablaDos, .carritoDiv {
   justify-content: center;
   align-items: center; }
 
+body {
+  font-family: 'Raleway', sans-serif; }
+
 header {
-  height: 150px;
+  height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: sticky;
   margin: 0px;
-  padding: 20px;
+  padding: 0px;
   font-weight: bold;
-  font-size: 21px;
+  font-size: 19px;
   top: 0px;
   background-image: linear-gradient(to right, #F6D186, #F19292); }
   header .imagenUno {
-    width: 110px;
-    height: 110px;
+    width: 80px;
+    height: 80px;
     animation-name: girar;
     animation-duration: 20s;
     animation-timing-function: linear;
     animation-iteration-count: infinite; }
   header h1 {
-    font-size: 80px; }
+    font-size: 50px; }
+
+#menuUno ul li {
+  color: #000;
+  position: relative;
+  text-decoration: none;
+  transition: all 1ms ease-in-out;
+  cursor: pointer;
+  padding: 10px; }
+
+#menuUno ul li:hover {
+  color: rgba(231, 210, 15, 0.979); }
+
+#menuUno ul li::before {
+  content: "";
+  position: absolute;
+  background: #CBE2B0;
+  inset: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease-in-out;
+  z-index: -1; }
+
+#menuUno ul li:hover::before {
+  transform: scaleX(1);
+  transform-origin: left; }
 
 @keyframes girar {
   from {
@@ -33,14 +67,71 @@ header {
   to {
     transform: rotate(360deg); } }
 
-.sectionOpi ul li::first-letter {
-  color: #768fb5;
-  font-size: 1rem;
-  font-family: 'satisfy', cursive; }
-
 nav ul li {
   list-style: none;
   display: inline-block; }
+
+.primeraSeccion {
+  margin: 20px;
+  padding: 20px;
+  text-align: left; }
+
+.descripcion::first-letter {
+  color: #768fb5;
+  font-size: 2rem;
+  font-family: 'satisfy', cursive; }
+
+main div h3 {
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  font-size: 50px; }
+
+main h4 {
+  margin: 10px 15px;
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 40px; }
+
+main section ul img {
+  object-fit: cover;
+  width: 20vh;
+  margin: 5px;
+  padding: 5px;
+  border: solid 1px black; }
+
+main section form {
+  margin: 5px;
+  padding: 5px;
+  font-size: 20px; }
+
+main section button {
+  margin: 5px;
+  padding: 5px;
+  font-size: 15px;
+  font-weight: bold; }
+
+section ul li {
+  margin: 5px 10px;
+  padding: 5px 10px;
+  font-size: 30px;
+  list-style: none; }
+
+.mainIn section {
+  margin: 13px;
+  padding: 13px; }
+
+footer {
+  margin: 10px;
+  padding: 10px;
+  font-size: 25px;
+  height: 500px;
+  font-weight: bold; }
+  footer h3 {
+    text-align: center; }
+  footer a {
+    margin: 0px;
+    padding: 0px; }
 
 .tablaUno {
   text-align: center;
@@ -71,14 +162,198 @@ nav ul li {
   font-weight: bold;
   text-align: center; }
 
-footer {
-  margin: 10px;
-  padding: 10px;
+.carritoDiv {
+  display: flex;
+  flex-direction: row-reverse; }
+
+.carritoH2 {
+  margin: 20px;
+  padding: 20px;
+  font-size: 50px; }
+
+.carritoImg {
+  width: 50vh;
+  height: 150px;
+  margin: 5px;
+  padding: 5px; }
+
+.imagenArt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5px;
+  padding: 5px;
+  background-color: #FCF7BB; }
+
+.envioUno {
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px; }
+
+.redUno {
+  margin: 20px;
+  padding: 20px;
+  font-size: 50px;
+  text-align: center; }
+
+.cotDo {
   font-size: 25px;
-  height: 500px;
+  margin: 20px;
+  padding: 20px;
   font-weight: bold; }
-  footer h3 {
+
+.imgCon {
+  width: 300px;
+  height: 300px; }
+
+.tipoProducto {
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold; }
+
+.sectionOpi ul li::first-letter {
+  color: #768fb5;
+  font-size: 2rem;
+  font-family: 'satisfy', cursive; }
+
+.primeraSeccion {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr;
+  grid-template-areas: "quienes imagen" "planet  imagen"  "tenemos imagen";
+  justify-content: center;
+  align-items: center;
+  justify-items: center; }
+
+.puntoUno {
+  grid-area: quienes; }
+
+.descripcion {
+  grid-area: planet; }
+
+.descripcionDos {
+  grid-area: tenemos; }
+
+.imagenTiendas {
+  grid-area: imagen; }
+
+.mainIn {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "cocina   gaming   oficina" "cocina   gaming   oficina";
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  background-color: beige; }
+
+.indexImguno {
+  grid-area: cocina; }
+
+.indexImgdos {
+  grid-area: gaming; }
+
+.indexImgtres {
+  grid-area: oficina; }
+
+.footerUno {
+  height: 40vh;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "carrito" "desc" "todos" "arriba";
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center; }
+
+.carritoImg {
+  grid-area: carrito;
+  text-align: center; }
+
+.irCarrito {
+  grid-area: desc; }
+
+.todos {
+  grid-area: todos; }
+
+.irArriba {
+  grid-area: arriba; }
+
+.mainOpi {
+  height: 40vh;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "uno uno dos " "uno uno dos";
+  justify-content: space-evenly;
+  justify-items: center;
+  align-items: center; }
+
+.sectionOpi {
+  grid-area: uno; }
+
+.sectionOpid {
+  grid-area: dos; }
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+  .primeraSeccion {
+    display: flex;
+    flex-direction: column; }
+  header h1 {
+    font-size: 3em; }
+  header {
+    display: inline-block;
+    height: 250px;
+    width: 100%;
     text-align: center; }
-  footer a {
-    margin: 0px;
-    padding: 0px; }
+  .mainIn {
+    height: 100%;
+    grid-template-columns: 0.5fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: " cocina " " gaming" " oficina";
+    justify-content: center;
+    align-items: center;
+    align-content: center; } }
+
+@media screen and (max-width: 576px) and (min-width: 350px) {
+  .primeraSeccion {
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "imagen" "quienes" "descripcion" "descripcionDos"; }
+  .puntoUno {
+    grid-area: quienes; }
+  .descripcion {
+    grid-area: descripcion; }
+  .descripcionDos {
+    grid-area: descripcionDos; }
+  .imagenTiendas {
+    grid-area: imagen; }
+  .mainIn {
+    height: 100%;
+    grid-template-columns: 0.5fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: " cocina " " gaming" " oficina";
+    justify-content: center;
+    align-items: center;
+    align-content: center; } }
+
+@media screen and (max-width: 768px) and (min-width: 573px) {
+  .mainOpi {
+    height: 80vh;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "uno " "dos"; }
+  .sectionOpid {
+    padding: 10px;
+    margin: 10px; } }
+
+@media screen and (max-width: 576px) and (min-width: 350px) {
+  header h1 {
+    font-size: 60px; } }

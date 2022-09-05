@@ -2,7 +2,11 @@
 body{
     font-family: 'Raleway', sans-serif;
 }
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 //header
 
 
@@ -12,21 +16,27 @@ body{
 @import "base/mixin";
 
 
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
 header{
-    height: 150px;
+    height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: sticky;
     margin: 0px;
-    padding: $pagging;
+    padding: 0px;
     font-weight: bold;
-    font-size: 21px;
+    font-size: 19px;
     top: 0px;
     background-image: $color-gradiente;
 
-    .imagenUno{   width: 110px;
-        height: 110px;
+    .imagenUno{  
+        width: 80px;
+        height: 80px;
         animation-name: girar;
         animation-duration: 20s;
         animation-timing-function: linear;
@@ -34,11 +44,44 @@ header{
             }
 
     h1{
-        font-size: 80px;   
+        font-size: 50px;   
     }
-    
 
 }
+//scss del index
+#menuUno {
+    ul{
+        li{
+            color: #000;
+            position: relative;
+            text-decoration: none;
+            transition: all 1ms ease-in-out;
+            cursor: pointer;
+            padding: 10px;
+        }
+        li:hover{
+            color: rgba(231, 210, 15, 0.979);
+        }
+
+        li::before{
+            content: "";
+            position: absolute;
+            background: #CBE2B0;
+            inset: 0;
+            position: absolute;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.5s ease-in-out;
+            z-index: -1;
+        }
+
+        li:hover::before{
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+    }
+}
+
 @keyframes girar{
     from{
         transform: rotate(0deg);
@@ -49,15 +92,7 @@ header{
     }
 }
 
-.sectionOpi {
-    ul{
-        li::first-letter{
-            @include primera-letra;
-        }
-    }
-    
-    
-}
+
 nav{
     ul{
         li{
@@ -66,6 +101,105 @@ nav{
         }
     }
 }
+
+//estilos Main del index
+
+.primeraSeccion{
+    margin: $margin;
+    padding: $pagging;
+    text-align: left;
+
+}
+
+.descripcion::first-letter{
+    @include primera-letra;
+}
+
+main{
+    div{
+        h3{
+            margin: $margin;
+            padding: $pagging;
+            text-align: center;
+            font-size: 50px;
+        }
+    }
+
+    h4{
+        margin: 10px 15px;
+        padding: 10px 15px;
+        text-align: center;
+        font-size: 40px;
+    }
+    section{
+        
+
+        ul{
+            img{
+                object-fit: cover;
+                width: 20vh;
+                margin:$margin/4;
+                padding:$pagging/4;
+                border: solid 1px black;
+            }
+        }
+        form{
+            margin: $margin/4;
+            padding: $pagging/4;
+            font-size: 20px;
+        }
+        button{
+            margin: $margin/4;
+            padding: $pagging/4;
+            font-size: 15px;
+            font-weight: bold;
+        }
+    }
+    
+}
+
+section{
+        ul{
+            li{
+                margin: 5px 10px;
+                padding: 5px 10px;
+                font-size: 30px;
+                list-style: none;
+            }
+         }
+}
+
+.mainIn{
+    section{
+    margin: 13px;
+    padding: 13px;
+    }
+}
+
+//scss del footer
+footer{
+    margin: $margin/2;
+    padding: $pagging/2;
+    font-size: map-get($map: $footer , $key:font-size );
+    height: map-get($map: $footer, $key:heigth );
+    font-weight: map-get($map: $footer, $key: font-weight );
+    
+    
+    h3{
+        text-align: center;
+    }
+
+    a{
+        margin: 0px;
+        padding: 0px;
+    }
+}
+
+
+
+
+
+//scss de contacto
 
 .tablaUno{
     text-align: center;
@@ -79,6 +213,8 @@ nav{
     display: flex;
     @extend %Pos
 }
+
+//scss de cotizaciones
 
 .cotUno{
     margin: $margin;
@@ -103,21 +239,304 @@ nav{
     text-align: center;
 }
 
-footer{
-    margin: $margin/2;
-    padding: $pagging/2;
-    font-size: map-get($map: $footer , $key:font-size );
-    height: map-get($map: $footer, $key:heigth );
-    font-weight: map-get($map: $footer, $key: font-weight );
+//pagina de formas de pago
+
+.carritoDiv{
+    display: flex;
+    flex-direction: row-reverse;
+    @extend %Pos
     
+}
+
+.carritoH2{
+    margin: $margin;
+    padding: $pagging;
+    font-size: 50px;
+}
+
+.carritoImg{
+    width: 50vh;
+    height: 150px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.imagenArt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px;
+    padding: 5px;
+    background-color: #FCF7BB;
+}
+
+.envioUno{
+    margin: $margin/4;
+    padding: $pagging/4;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+//estilos de pagina de contacto
+
+.redUno{
+    margin: $margin;
+    padding: $pagging;
+    font-size: 50px;
+    text-align: center;
+}
+
+.cotDo{
+    font-size: 25px;
+    margin: $margin;
+    padding: $pagging;
+    font-weight: bold;
+}
+
+
+.imgCon{
+    width: 300px;
+    height: 300px;
+}
+
+.tipoProducto{
+    margin: $margin/4;
+    padding: $pagging/4;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+
+}
+
+.sectionOpi {
+    ul{
+        li::first-letter{
+            @include primera-letra;
+        }
+    }       
+}
+
+//estilos grid de index
+
+
+.primeraSeccion{
     
-    h3{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    grid-template-areas:  "quienes imagen"
+                          "planet  imagen" 
+                          "tenemos imagen" ;
+justify-content: center;
+align-items: center;
+justify-items: center;
+}
+
+.puntoUno{
+    grid-area: quienes;
+}
+
+.descripcion{
+    grid-area: planet;
+}
+
+.descripcionDos{
+    grid-area: tenemos ;
+}
+.imagenTiendas{
+    grid-area: imagen;
+}
+
+
+.mainIn{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:  1fr 1fr;
+    grid-template-areas:
+                         "cocina   gaming   oficina"
+                         "cocina   gaming   oficina";
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    background-color: beige;
+}
+
+.indexImguno{
+    grid-area: cocina;
+}
+
+.indexImgdos{
+    grid-area: gaming;
+
+}
+
+.indexImgtres{
+    grid-area: oficina;
+}
+
+.footerUno{
+    height: 40vh;
+    display: grid;
+    grid-template-columns: auto ;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+                         "carrito"
+                         "desc"
+                         "todos"
+                         "arriba";
+                         
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+   
+}
+
+.carritoImg{
+    grid-area: carrito;
+    text-align: center;
+
+}
+
+.irCarrito{
+    grid-area: desc;
+}
+
+.todos{
+    grid-area: todos;
+}
+
+.irArriba{
+    grid-area: arriba;
+}
+
+.mainOpi{
+    height: 40vh;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-areas: "uno uno dos "
+                          "uno uno dos";
+
+   justify-content: space-evenly;
+   justify-items: center;
+   align-items: center;
+}
+
+.sectionOpi{
+    grid-area: uno;
+}
+
+.sectionOpid{
+    grid-area: dos;
+}
+
+//media queries para moobile index
+//media queries de header
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+.primeraSeccion{
+    display: flex;
+    flex-direction: column;
+}
+
+    header h1{
+    
+        font-size: 3em;
+    }
+    header {
+
+        display: inline-block;
+        height: 250px;
+        width: 100%;
         text-align: center;
     }
 
-    a{
-        margin: 0px;
-        padding: 0px;
+    .mainIn{
+        height: 100%;
+        grid-template-columns: 0.5fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: " cocina "
+                             " gaming"
+                             " oficina";
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+}
+//media querie para telefonos
+
+@media screen and (max-width: 576px) and (min-width: 350px) {
+
+
+.primeraSeccion{
+     height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: "imagen"
+                             "quienes"
+                             "descripcion"
+                             "descripcionDos";
+}
+
+.puntoUno{
+    grid-area: quienes;
+}
+.descripcion{
+    grid-area: descripcion;
+}
+
+.descripcionDos{
+    grid-area: descripcionDos;
+
+}
+
+.imagenTiendas{
+    grid-area: imagen;
+}
+
+.mainIn{
+    height: 100%;
+    grid-template-columns: 0.5fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: " cocina "
+                         " gaming"
+                         " oficina";
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+}
+
+
+
+
+//media queri main de opiniones
+@media screen and (max-width: 768px) and (min-width: 573px) {
+    .mainOpi{
+        height: 80vh;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 1fr 1fr ;
+        grid-template-areas: "uno "
+                              "dos";
+    
+       
+    }
+
+    .sectionOpid{
+        padding: 10px;
+        margin: 10px;
     }
 }
 
+@media screen and (max-width: 576px) and (min-width: 350px) {
+
+header h1{
+    font-size: 60px;
+}
+
+}

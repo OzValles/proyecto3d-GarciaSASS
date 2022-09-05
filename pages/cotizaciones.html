@@ -4,12 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Impresiones en 3D, Creacion de tienda Ecommers">
-    <meta name="keywords" content="impresiones,3d,figuras, coleccionables, anime, star wars">
-    <meta name="copy" content="planet3D">
-    <meta name="author" content="hiramGarcia">
-    <meta property="og:image" content="https://www.flaticon.es/icono-gratis/planeta-verde_2573661">
-    <meta property="og:locale" content="es_ES">
      <!--fuente-->
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +12,10 @@
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-     <!--css-->
+    <!--Link de boostrap-->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> 
+    <!--css-->
      <link rel="stylesheet" href="../css/estilo.css">
      <title>Pagina de Contacto</title>
     <title>Cotizaciones</title>
@@ -26,24 +23,43 @@
 
 <body>
 
-    <header id="ir-arriba"> 
-        <!--Aqui iria el logo pero acomodado me gustaria que fuera en la parte de la derecha-->
+    
+    <header id="Ir-arriba" class="container-fluid mt-2 ">  
         <img src="../img/img1.png" class="imagenUno" alt="Logotipo de la compañia">
         <h1 class=animate__heartBeat> PLANET 3D</h1>
-    
-         <nav class="menu">
-        
-            <!--Esto acomodado de mejor manera para que se puedan ver los botones de una manera mas estetica-->
-            <ul>
-                <li> <a href="../index.html"> Inicio </a></li>
-                <li> <a href="opiniones.html"> Reseñas</a>  </li>
-                <li> <a href="formasdepago.html">Carrito</a> </li>
-                <li> <a href="cotizaciones.html"> Cotizacion  </a> </li>
-                <li> <a href="contacto.html"> Contacto  </a> </li>
-            </ul>
-           
-        </nav>
-    </header> 
+         
+        <div class="row" id="menuUno">
+            <nav class="  navbar navbar-expand-lg bg-menu col-sm-12 col-md-12 mt-2 ms-1 " >
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="opiniones.html">Reseñas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="formasdepago.html">Carrito</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="cotizaciones.html">Cotizacion</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                      </li>
+                      
+         
+                    </ul>
+                    
+                  </div>
+                </div>
+              </nav>
+        </div>
+    </header>
 
     <main>
         <div>
@@ -134,7 +150,9 @@
         <h3>TODOS LOS DERECHOS RESERVADOS</h3>
         <a href="#ir-arriba"> Ir al inicio </a>
     </footer>
-    
+      <!--javascript-->
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     
 </body>
 </html>
