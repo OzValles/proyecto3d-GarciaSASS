@@ -76,23 +76,95 @@ nav ul li {
   font-size: 2rem;
   font-family: 'satisfy', cursive; }
 
-.card {
+.primeraSeccion {
+  margin: 20px;
+  padding: 20px;
+  text-align: left; }
+
+.prod {
+  margin: 20px;
+  padding: 20px;
+  text-align: center; }
+
+.cardUno {
+  margin: 20px;
+  padding: 20px;
   width: 416px;
   height: 299px;
   position: relative;
   color: #4a293b;
-  background: url("../img/img2.png") center no-repeat;
   background-size: cover;
   border-radius: 20px;
-  overflow: hidden; }
+  overflow: hidden;
+  background: url("../img/img2.png") center no-repeat; }
+
+.cardDos {
+  margin: 20px;
+  padding: 20px;
+  width: 416px;
+  height: 299px;
+  position: relative;
+  color: #4a293b;
+  background-size: cover;
+  border-radius: 20px;
+  overflow: hidden;
+  background: url("../img/img3.png") center no-repeat; }
+
+.cardTres {
+  margin: 20px;
+  padding: 20px;
+  width: 416px;
+  height: 299px;
+  position: relative;
+  color: #4a293b;
+  background-size: cover;
+  border-radius: 20px;
+  overflow: hidden;
+  background: url("../img/img4.png") center no-repeat; }
+
+.cardCuatro {
+  margin: 20px;
+  padding: 20px;
+  width: 416px;
+  height: 299px;
+  position: relative;
+  color: #4a293b;
+  background-size: cover;
+  border-radius: 20px;
+  overflow: hidden;
+  background: url("../img/img5.png") center no-repeat; }
+
+.cardCinco {
+  margin: 20px;
+  padding: 20px;
+  width: 416px;
+  height: 299px;
+  position: relative;
+  color: #4a293b;
+  background-size: cover;
+  border-radius: 20px;
+  overflow: hidden;
+  background: url("../img/img6.png") center no-repeat; }
+
+.cardSeis {
+  margin: 20px;
+  padding: 20px;
+  width: 416px;
+  height: 299px;
+  position: relative;
+  color: #4a293b;
+  background-size: cover;
+  border-radius: 20px;
+  overflow: hidden;
+  background: url("../img/img7.png") center no-repeat; }
 
 .cardContent {
   position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
-  padding: 20px;
-  background-color: #d0b51a;
+  padding: 13px;
+  background-color: #FFE9AE;
   border-top-left-radius: 20px;
   transform: translateY(70px);
   transition: transform .25s; }
@@ -106,7 +178,7 @@ nav ul li {
   height: 100px;
   transform: rotate(-175deg);
   border-radius: 50%;
-  box-shadow: inset 48px 48px #cbbd22; }
+  box-shadow: inset 48px 48px  #FFE9AE; }
 
 .cardTitle {
   color: #6A515E;
@@ -123,10 +195,45 @@ nav ul li {
   opacity: 0;
   transition: opacity .5s; }
 
-.card:hover .cardContent {
+.cardUno:hover .cardContent {
   transform: translateY(0); }
 
-.card:hover .cardDesc {
+.cardUno:hover .cardDesc {
+  opacity: 1;
+  transition-delay: .25s; }
+
+.cardDos:hover .cardContent {
+  transform: translateY(0); }
+
+.cardDos:hover .cardDesc {
+  opacity: 1;
+  transition-delay: .25s; }
+
+.cardTres:hover .cardContent {
+  transform: translateY(0); }
+
+.cardTres:hover .cardDesc {
+  opacity: 1;
+  transition-delay: .25s; }
+
+.cardCuatro:hover .cardContent {
+  transform: translateY(0); }
+
+.cardCuatro:hover .cardDesc {
+  opacity: 1;
+  transition-delay: .25s; }
+
+.cardCinco:hover .cardContent {
+  transform: translateY(0); }
+
+.cardCinco:hover .cardDesc {
+  opacity: 1;
+  transition-delay: .25s; }
+
+.cardSeis:hover .cardContent {
+  transform: translateY(0); }
+
+.cardSeis:hover .cardDesc {
   opacity: 1;
   transition-delay: .25s; }
 
@@ -250,24 +357,11 @@ footer {
 .imagenTiendas {
   grid-area: imagen; }
 
-.mainIn {
+.productos {
+  padding: 0px 70px 40px 70px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "cocina   gaming   oficina" "cocina   gaming   oficina";
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  background-color: beige; }
-
-.indexImguno {
-  grid-area: cocina; }
-
-.indexImgdos {
-  grid-area: gaming; }
-
-.indexImgtres {
-  grid-area: oficina; }
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem; }
 
 .footerUno {
   height: 40vh;

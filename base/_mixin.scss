@@ -24,3 +24,16 @@
     font-family: 'satisfy', cursive;
     
 }
+@mixin card {
+    
+    margin: 20px;
+    padding: 20px;
+    width: 416px;
+    height: 299px;
+    position: relative;
+    color: #4a293b;
+    background-size: cover;
+    border-radius: 20px;
+    overflow: hidden;
+    
+}
