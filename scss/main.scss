@@ -2,6 +2,7 @@
 body{
     font-family: 'Raleway', sans-serif;
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -115,12 +116,14 @@ nav{
 } 
 
 .prod{
-    margin: 20px;
+    margin: 90px 20px 20px 20px;
     padding: 20px;
+    font-weight: bold;
     text-align: center
+    
 }
 
-
+//estilos cards
 .cardUno{
     @include card;
 
@@ -273,12 +276,6 @@ nav{
 }
 
 
-
-
-
-
-
-
 //scss del footer
 footer{
     margin: $margin/2;
@@ -297,9 +294,6 @@ footer{
         padding: 0px;
     }
 }
-
-
-
 
 
 //scss de contacto
@@ -453,7 +447,8 @@ justify-items: center;
 
 
 .productos{
-background-color: #C1EFFF;
+    background: linear-gradient(125.95deg, #C700BF 10.95%, #7DA900 100%), linear-gradient(341.1deg, #00C2FF 7.52%, #4E00B1 77.98%), linear-gradient(222.34deg, #A90000 12.99%, #00FFE0 87.21%), linear-gradient(130.22deg, #8FA600 18.02%, #5A31FF 100%);
+    background-blend-mode: screen, color-dodge, color-dodge, normal;
     padding: 0px 70px 40px 70px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
