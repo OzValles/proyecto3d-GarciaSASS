@@ -400,7 +400,7 @@ footer{
     margin: $margin;
     padding: $pagging;
     font-size: 25px;
-    background-color: #FCF7BB;
+    background-color: linear-gradient(125.95deg, #C700BF 10.95%, #7DA900 100%), linear-gradient(341.1deg, #00C2FF 7.52%, #4E00B1 77.98%), linear-gradient(222.34deg, #A90000 12.99%, #00FFE0 87.21%), linear-gradient(130.22deg, #8FA600 18.02%, #5A31FF 100%);
 }
 
 .legUno{
@@ -607,7 +607,8 @@ justify-items: center;
 //media queries para moobile index
 //media queries de header
 
-@media screen and (max-width: 768px) and (min-width: 576px) {
+@media screen and (max-width: 768px) and (min-width: 576px) 
+{
 .primeraSeccion{
     display: flex;
     flex-direction: column;
@@ -638,10 +639,32 @@ justify-items: center;
     }
 
 }
+
+//media queries
+
+ @media screen and (max-width: 768px) {
+    header{
+        position: unset;
+        z-index: 1;
+
+        nav{
+            padding-top: 1rem;
+        }
+
+    }   
+
+    .mediaMenu{
+        margin-left: 0px;
+    }
+    
+}
+
 //media querie para telefonos
 
 @media screen and (max-width: 576px) and (min-width: 350px) {
 
+
+   
 
 .primeraSeccion{
      height: 100%;
