@@ -1,4 +1,4 @@
-// unicamente hare de cotizacion
+
 body{
     font-family: 'Raleway', sans-serif;
 }
@@ -279,8 +279,9 @@ nav{
 
 //scss del footer
 footer{
-    margin: $margin/2;
-    padding: $pagging/2;
+    
+    margin: 0;
+    padding: 0;
     font-size: map-get($map: $footer , $key:font-size );
     height: map-get($map: $footer, $key:heigth );
     font-weight: map-get($map: $footer, $key: font-weight );
@@ -296,6 +297,77 @@ footer{
     }
 }
 
+// iconos de redes 
+.icons {
+    display: flex;
+    column-gap: 25px;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 26px;
+    color: black;
+    border-radius: 50%;
+    outline: 2px solid #fff;
+    transition-property:
+        outline-offset, outline-color,
+        background-color;
+    transition-duration: .25s;
+}
+
+.icon:hover {
+    outline-offset: 4px;
+}
+
+.icon:hover i {
+    animation: shake .25s;
+}
+
+.iconInstagram:hover {
+    background-image: radial-gradient(circle at 30% 107%,
+            #fdf497 0%, #fdf497 5%,
+            #fd5949 45%, #d6249f 60%,
+            #285AEB 90%);
+    outline-color: #a02d76;
+}
+
+.iconFab:hover {
+    background-color: #1da1f2;
+    outline-color: #1da1f2;
+}
+
+.iconMail:hover {
+    background-color: #DB4437;
+    outline-color: #DB4437;
+}
+
+.iconGithub:hover {
+    background-color: #2ea44f;
+    outline-color: #2ea44f;
+}
+
+@keyframes shake {
+    10% {
+        transform: rotate(15deg);
+    }
+
+    20% {
+        transform: rotate(-15deg);
+    }
+
+    30% {
+        transform: rotate(15deg);
+    }
+
+    40% {
+        transform: rotate(-15deg);
+    }
+}
 
 //scss de whatsapp
 
@@ -360,10 +432,10 @@ footer{
 }
 
 .carritoImg{
-    width: 50vh;
-    height: 150px;
-    margin: 5px;
-    padding: 5px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    
 }
 
 .imagenArt{
@@ -466,13 +538,14 @@ justify-items: center;
 
 
 .footerUno{
+    background: linear-gradient(180deg, #FFB7B7 0%, #727272 100%), radial-gradient(60.91% 100% at 50% 0%, #FFD1D1 0%, #260000 100%), linear-gradient(238.72deg, #FFDDDD 0%, #720066 100%), linear-gradient(127.43deg, #00FFFF 0%, #FF4444 100%), radial-gradient(100.22% 100% at 70.57% 0%, #FF0000 0%, #00FFE0 100%), linear-gradient(127.43deg, #B7D500 0%, #3300FF 100%);
+    background-blend-mode: screen, overlay, hard-light, color-burn, color-dodge, normal;
     height: 40vh;
     display: grid;
     grid-template-columns: auto ;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto auto auto;
     grid-template-areas:
-                         "carrito"
-                         "desc"
+                        "redes"                    
                          "todos"
                          "arriba";
                          
@@ -483,23 +556,23 @@ justify-items: center;
    
 }
 
-.carritoImg{
-    grid-area: carrito;
-    text-align: center;
-
+.icons{
+    grid-area: redes;
+    margin: 10px;
 }
 
-.irCarrito{
-    grid-area: desc;
-}
 
 .todos{
     grid-area: todos;
+    margin: 10px;
 }
 
 .irArriba{
     grid-area: arriba;
+    margin: 10px;
+    font-weight: bold;
 }
+
 
 .mainOpi{
     height: 40vh;
