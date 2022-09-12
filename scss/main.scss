@@ -116,7 +116,7 @@ nav{
 } 
 
 .prod{
-    margin: 75px 20px 20px 20px;
+    margin: 0px 20px 20px 20px;
     padding: 20px;
     font-weight: bold;
     text-align: center
@@ -286,10 +286,6 @@ footer{
     height: map-get($map: $footer, $key:heigth );
     font-weight: map-get($map: $footer, $key: font-weight );
     
-    
-    h3{
-        text-align: center;
-    }
 
     a{
         margin: 0px;
@@ -484,7 +480,6 @@ footer{
 
 //estilos grid de index
 
-
 .primeraSeccion{
     margin: 30px;
     display: grid;
@@ -513,6 +508,32 @@ justify-items: center;
     grid-area: imagen;
 }
 
+.videos{
+    padding: 40px 70px;
+    line-height: 1.5rem;
+    display: grid;
+    grid-template-areas: "video3D textoDere";
+    gap: 2rem;
+    align-items: center;
+    overflow: hidden;
+}
+
+.desDer{
+    text-align: left;
+    grid-area: textoDere;
+}
+
+.contenido iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.video3D{
+    grid-area: video3D;
+}
+
+
+//grid de productos
 
 .productos{
     background: linear-gradient(125.95deg, #C700BF 10.95%, #7DA900 100%), linear-gradient(341.1deg, #00C2FF 7.52%, #4E00B1 77.98%), linear-gradient(222.34deg, #A90000 12.99%, #00FFE0 87.21%), linear-gradient(130.22deg, #8FA600 18.02%, #5A31FF 100%);
