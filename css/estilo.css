@@ -250,6 +250,11 @@ footer {
     margin: 0px;
     padding: 0px; }
 
+.whatsapp {
+  position: fixed;
+  bottom: 30px;
+  left: 30px; }
+
 .tablaUno {
   text-align: center;
   font-size: 35px; }
@@ -362,10 +367,10 @@ footer {
 .productos {
   background: linear-gradient(125.95deg, #C700BF 10.95%, #7DA900 100%), linear-gradient(341.1deg, #00C2FF 7.52%, #4E00B1 77.98%), linear-gradient(222.34deg, #A90000 12.99%, #00FFE0 87.21%), linear-gradient(130.22deg, #8FA600 18.02%, #5A31FF 100%);
   background-blend-mode: screen, color-dodge, color-dodge, normal;
-  padding: 0px 70px 40px 70px;
+  padding: 0px 80px 70px 120px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10rem; }
+  gap: 2rem; }
 
 .footerUno {
   height: 40vh;
