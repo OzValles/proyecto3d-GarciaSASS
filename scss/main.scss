@@ -125,6 +125,9 @@ nav{
 }
 
 //estilos cards
+
+
+
 .cardUno{
     @include card;
 
@@ -174,7 +177,7 @@ nav{
     left: 0;
     bottom: 0;
     width: 100%;
-    padding: 13px;
+    padding: 15px;
     background-color:  #FFE9AE;
     border-top-left-radius: 20px;
     transform: translateY(70px);
@@ -374,18 +377,32 @@ footer{
 }
 //scss de contacto
 
-.tablaUno{
-    text-align: center;
-    font-size: 35px;
+.forCont{
+    
+    padding: 0px 40px 50px 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+
+    form{
+        width: 50%;
+    }    
+    iframe{
+        width: 50%;
+    }
+    button{
+        font-weight: bold;
+        color: black;
+        background-color: #FFC4C4;
+    }
+
+    button:hover{
+        background-color: #EE6983;
+        font-weight: bold;
+    }
 }
 
-.tablaDos{
-    margin: $margin;
-    padding: $pagging;
-    height: 200px;
-    display: flex;
-    @extend %Pos
-}
+
 
 //scss de cotizaciones
 
@@ -538,7 +555,9 @@ justify-items: center;
 .productos{
     background: linear-gradient(125.95deg, #C700BF 10.95%, #7DA900 100%), linear-gradient(341.1deg, #00C2FF 7.52%, #4E00B1 77.98%), linear-gradient(222.34deg, #A90000 12.99%, #00FFE0 87.21%), linear-gradient(130.22deg, #8FA600 18.02%, #5A31FF 100%);
     background-blend-mode: screen, color-dodge, color-dodge, normal;
-    padding: 0px 80px 70px 120px;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 2rem;

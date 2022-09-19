@@ -61,51 +61,47 @@
           </nav>
     </div>
 </header>
+
     <main>
         <div class="cotUno">
             <h2>Contactanos</h2>
         </div>
 
-        <section>
-            <form>
-                <fieldset class="formCot">
-                    <legend class="legUno"> Formulario de Contactos</legend>
-
-                    <div>
-                        <label for="nombre"> ¿Cual es tu Nombre? </label>
-                        <input type="text" name="nombre" id="nombre " placeholder="Coloca tu nombre" required>
-                    </div>
+        <div class="forCont">
+          <form>
+              <div class="mb-3">
+                  <input type="text" class="form-control" id="nombre" aria-describedby="nombre" placeholder="Nombre">
+              </div>
+              
+              <div class="mb-3">
+                  <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Email">
+              </div>
+                  
+              <select class="form-select mb-3" aria-label="select">
+                  <option selected>¿Qué tipo de Impresión buscas?</option>
+                  <option value="1">en FDM </option>
+                  <option value="2">Mediante resina</option>
                 
-                    <div>
-                        <label for="email"> ¿Cual es tu email?</label>
-                        <input type="email" id="email" name="email" placeholder="Coloca tu email" required>
-                    </div>
+              </select>
+              
+              <div class="mb-3">
+                  <input class="form-control" type="file" id="formFileMultiple" multiple>
+              </div>
+              
+              <div class="mb-3">
+                  <textarea class="form-control" id="textarea" rows="3"  placeholder="Describenos tus ideas"></textarea>
+              </div>
+              
+              <button type="submit" class="btn btn-primary">Enviar</button>    
+              
+              <button type="submit" class="btn btn-primary">Borrar</button>
+          </form>
 
-                    <div>
-                        <label for="pais"> Coloca tu pais</label>
-                        <select name="pais" id="pais" required>
-                            <option value="Mexico"> Mexico</option>
-                            <option value="Colombia"> Colombia</option>
-                            <option value="Argentina"> Argentina</option>
-                        </select>
-                    </div>
+          <!-- Lugar-->
 
-                    <div>
-                        <input type="date" name="fecha" id="fecha">
-                    </div>
-                
-                    <div>
-                        <textarea name="peticion" id="peticion" cols="40" rows="5" placeholder="Escriba su petición" required></textarea>
-                    </div>
-
-                    <div>
-                        <input type="submit" value="Enviar">
-                        <input type="reset"  value="Resetear formulario">
-                    </div>
-
-                </fieldset>
-            </form>
-        </section>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3760.7396927725163!2d-99.08520074915708!3d19.509831986775907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fb8c7dd34d4f%3A0xcda96a59591cbb5f!2sMy%20Planet%203D!5e0!3m2!1ses-419!2smx!4v1663556932225!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      
+        </div>
     </main>
 
      <!--Whatsapp -->
