@@ -303,6 +303,9 @@ footer {
   bottom: 30px;
   left: 30px; }
 
+.introCon {
+  margin: 40px; }
+
 .forCont {
   padding: 0px 40px 50px 40px;
   display: flex;
@@ -319,6 +322,19 @@ footer {
   .forCont button:hover {
     background-color: #EE6983;
     font-weight: bold; }
+
+#fondoDo {
+  background: linear-gradient(180deg, #FFB7B7 0%, #727272 100%), radial-gradient(60.91% 100% at 50% 0%, #FFD1D1 0%, #260000 100%), linear-gradient(238.72deg, #FFDDDD 0%, #720066 100%), linear-gradient(127.43deg, #00FFFF 0%, #FF4444 100%), radial-gradient(100.22% 100% at 70.57% 0%, #FF0000 0%, #00FFE0 100%), linear-gradient(127.43deg, #B7D500 0%, #3300FF 100%);
+  background-blend-mode: screen, overlay, hard-light, color-burn, color-dodge, normal; }
+
+#butonDos {
+  font-weight: bold;
+  color: black;
+  background-color: #FFC4C4; }
+
+#butonDos:hover {
+  background-color: #EE6983;
+  font-weight: bold; }
 
 .cotUno {
   margin: 20px;
@@ -338,6 +354,52 @@ footer {
 .tablaTres {
   font-weight: bold;
   text-align: center; }
+
+.fotos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  background: linear-gradient(125.95deg, #C700BF 10.95%, #7DA900 100%), linear-gradient(341.1deg, #00C2FF 7.52%, #4E00B1 77.98%), linear-gradient(222.34deg, #A90000 12.99%, #00FFE0 87.21%), linear-gradient(130.22deg, #8FA600 18.02%, #5A31FF 100%);
+  background-blend-mode: screen, color-dodge, color-dodge, normal;
+  padding: 40px 60px;
+  gap: 2rem;
+  align-content: center; }
+  .fotos img {
+    display: block;
+    width: 50%; }
+  .fotos p {
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center; }
+
+.itemFotos {
+  display: grid;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  justify-items: center;
+  align-items: center;
+  justify-content: center; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #437dbfb2;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.itemFotos:hover .overlay {
+  opacity: 1; }
+
+.itemFotos:hover img {
+  filter: blur(3px); }
 
 .carritoDiv {
   display: flex;
@@ -362,8 +424,8 @@ footer {
   background-color: #FCF7BB; }
 
 .envioUno {
-  margin: 5px;
-  padding: 5px;
+  margin: 40px;
+  padding: 40px;
   text-align: center;
   font-weight: bold;
   font-size: 40px; }
@@ -439,7 +501,7 @@ footer {
 .footerUno {
   background: linear-gradient(180deg, #FFB7B7 0%, #727272 100%), radial-gradient(60.91% 100% at 50% 0%, #FFD1D1 0%, #260000 100%), linear-gradient(238.72deg, #FFDDDD 0%, #720066 100%), linear-gradient(127.43deg, #00FFFF 0%, #FF4444 100%), radial-gradient(100.22% 100% at 70.57% 0%, #FF0000 0%, #00FFE0 100%), linear-gradient(127.43deg, #B7D500 0%, #3300FF 100%);
   background-blend-mode: screen, overlay, hard-light, color-burn, color-dodge, normal;
-  height: 40vh;
+  height: 25vh;
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto auto auto;
