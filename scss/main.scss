@@ -456,10 +456,10 @@ footer{
 
 .fotos{
     display: grid;
+    margin: 0px 0px 40px 0px;
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
-    background: linear-gradient(125.95deg, #C700BF 10.95%, #7DA900 100%), linear-gradient(341.1deg, #00C2FF 7.52%, #4E00B1 77.98%), linear-gradient(222.34deg, #A90000 12.99%, #00FFE0 87.21%), linear-gradient(130.22deg, #8FA600 18.02%, #5A31FF 100%);
-    background-blend-mode: screen, color-dodge, color-dodge, normal;
+    background: linear-gradient(45deg, #C7F5FE 10%, #C7F5FE 40%, #FCC8F8 40%, #FCC8F8 60%, #EAB4F8 60%, #EAB4F8 65%, #F3F798 65%, #F3F798 90%);
     padding: 40px 60px;
     gap: 2rem;
    
@@ -544,8 +544,8 @@ footer{
 }
 
 .envioUno{
-    margin: 40px;
-    padding: 40px;
+    margin: 20px;
+    padding: 20px;
     text-align: center;
     font-weight: bold;
     font-size: 40px;
@@ -639,8 +639,9 @@ justify-items: center;
 //grid de productos
 
 .productos{
-    background: linear-gradient(125.95deg, #C700BF 10.95%, #7DA900 100%), linear-gradient(341.1deg, #00C2FF 7.52%, #4E00B1 77.98%), linear-gradient(222.34deg, #A90000 12.99%, #00FFE0 87.21%), linear-gradient(130.22deg, #8FA600 18.02%, #5A31FF 100%);
-    background-blend-mode: screen, color-dodge, color-dodge, normal;
+    margin: 0px 0px 40px 0px;
+    background: linear-gradient(180deg, #FFB7B7 0%, #727272 100%), radial-gradient(60.91% 100% at 50% 0%, #FFD1D1 0%, #260000 100%), linear-gradient(127.43deg, #00FFFF 0%, #FFFFFF 100%), radial-gradient(100.22% 100% at 70.57% 0%, #FF0000 0%, #00FFE0 100%), linear-gradient(64.82deg, #DBFF00 0%, #3300FF 100%);
+    background-blend-mode: screen, overlay, color-burn, color-dodge, normal;
     justify-content: space-between;
     align-items: center;
     justify-items: center;
