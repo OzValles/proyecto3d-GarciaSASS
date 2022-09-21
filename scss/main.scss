@@ -732,6 +732,34 @@ justify-items: center;
 //media queries para tablet
 //media queries de header
 
+
+@media screen and (max-width: 1025px) and (min-width: 769px) {
+
+    .videos{
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        margin: 50px;
+        line-height: 1.5rem;
+        display: grid;
+        grid-template-areas: "video3D"
+                             "textoDere";
+        gap: 2rem;
+        
+        overflow: hidden;
+    }
+
+    .video3D{
+        grid-area: video3D;
+    }
+    
+    .desDer{
+        text-align: left;
+    }
+}
+
+
 @media screen and (max-width: 768px) and (min-width: 576px) 
 {
     header {
@@ -759,6 +787,29 @@ justify-items: center;
         height: 35vh;
     }
 
+    .videos{
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        margin: 20px;
+        line-height: 1.5rem;
+        display: grid;
+        grid-template-areas: "video3D"
+                             "textoDere";
+        gap: 2rem;
+        
+        overflow: hidden;
+    }
+
+    .video3D{
+        grid-area: video3D;
+    }
+    
+    .desDer{
+        text-align: left;
+    }
+
     .whatsapp{
         transform: scale(0.8);
         
@@ -771,6 +822,8 @@ justify-items: center;
         bottom: 10px;
         right: 10px;
     }
+
+
     
 }
 //media queries
@@ -779,20 +832,22 @@ justify-items: center;
 
 //media querie para telefonos
 
-@media screen and (max-width: 576px) and (min-width: 350px) {
+@media screen and (max-width: 640px) and (min-width: 350px) {
     
     header {
-        
+        padding: 0;
+        margin: 0%;
         top: 0;
         height: 250px;
         width: 100%;
         text-align: center;
         z-index: 1;
         position: relative;
+        
     }
 
         #titulo{
-            font-size: 7vh;
+            font-size: 4vh;
         }
     
 
@@ -800,6 +855,16 @@ justify-items: center;
     #menuUno{
         padding: 10px 60px;
     }
+
+    .videos{
+        display: none;
+    
+    }
+    .desDer{
+        display: none;
+    }
+    
+    
 
 .primeraSeccion{
      height: 100%;
