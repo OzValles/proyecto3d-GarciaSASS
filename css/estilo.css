@@ -85,7 +85,8 @@ nav ul li {
   margin: 0px 20px 20px 20px;
   padding: 20px;
   font-weight: bold;
-  text-align: center; }
+  text-align: center;
+  font-size: 45px; }
 
 .cardUno {
   margin: 20px;
@@ -340,7 +341,8 @@ footer {
   margin: 20px;
   padding: 20px;
   text-align: center;
-  font-size: 50px; }
+  font-size: 45px;
+  font-weight: bold; }
 
 .formCot {
   margin: 20px;
@@ -408,7 +410,8 @@ footer {
 .carritoH2 {
   margin: 20px;
   padding: 20px;
-  font-size: 50px; }
+  font-size: 45px;
+  font-weight: bold; }
 
 .carritoImg {
   position: fixed;
@@ -416,12 +419,15 @@ footer {
   right: 30px; }
 
 .imagenArt {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  text-align: center;
   margin: 5px;
-  padding: 5px;
-  background-color: #FCF7BB; }
+  padding: 0px;
+  background: linear-gradient(180deg, #FFB7B7 0%, #727272 100%), radial-gradient(60.91% 100% at 50% 0%, #FFD1D1 0%, #260000 100%), linear-gradient(127.43deg, #00FFFF 0%, #FFFFFF 100%), radial-gradient(100.22% 100% at 70.57% 0%, #FF0000 0%, #00FFE0 100%), linear-gradient(64.82deg, #DBFF00 0%, #3300FF 100%);
+  background-blend-mode: screen, overlay, color-burn, color-dodge, normal; }
+  .imagenArt h3 {
+    font-weight: bold;
+    font-size: 30px;
+    margin: 20px; }
 
 .envioUno {
   margin: 20px;
@@ -445,6 +451,10 @@ footer {
   color: #768fb5;
   font-size: 2rem;
   font-family: 'satisfy', cursive; }
+
+.puntoUno {
+  font-size: 45px;
+  font-weight: bold; }
 
 .primeraSeccion {
   margin: 30px;
