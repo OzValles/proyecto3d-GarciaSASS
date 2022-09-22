@@ -733,7 +733,7 @@ justify-items: center;
 //media queries de header
 
 
-@media screen and (max-width: 1025px) and (min-width: 769px) {
+@media screen and (max-width: 1028px) and (min-width: 769px) {
 
     .videos{
         justify-items: center;
@@ -756,6 +756,31 @@ justify-items: center;
     
     .desDer{
         text-align: left;
+    }
+
+    //resoponsive productos
+
+    .productos{
+       
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        display: grid;
+        grid-template-columns: auto ;
+        grid-template-rows: auto auto auto auto auto auto;
+        
+
+
+        gap: 2rem;
+    }
+
+    //responsive carruito
+
+
+    .imagenArt{
+        img{
+            display: none;
+        }
     }
 }
 
@@ -823,8 +848,30 @@ justify-items: center;
         right: 10px;
     }
 
+//resoponsive productos
 
+.productos{
+       
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: auto ;
+    grid-template-rows: auto auto auto auto auto auto;
     
+
+
+    gap: 2rem;
+}
+    
+//responsive carruito
+
+.imagenArt{
+    img{
+        display: none;
+    }
+}
+
 }
 //media queries
 
@@ -866,48 +913,71 @@ justify-items: center;
     
     
 
-.primeraSeccion{
-     height: 100%;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto;
-        grid-template-areas: "imagen"
-                             "quienes"
-                             "descripcion"
-                             "descripcionDos";
-}
+    .primeraSeccion{
+        height: 100%;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto auto;
+            grid-template-areas: "imagen"
+                                "quienes"
+                                "descripcion"
+                                "descripcionDos";
+    }
 
-.puntoUno{
-    grid-area: quienes;
-}
-.descripcion{
-    grid-area: descripcion;
-}
+    .puntoUno{
+        grid-area: quienes;
+    }
+    .descripcion{
+        grid-area: descripcion;
+    }
 
-.descripcionDos{
-    grid-area: descripcionDos;
+    .descripcionDos{
+        grid-area: descripcionDos;
 
-}
+    }
 
-.imagenTiendas{
-    grid-area: imagen;
-}
+    .imagenTiendas{
+        grid-area: imagen;
+    }
 
-.footerUno{
-    height: 35vh;
-}
+    .footerUno{
+        height: 35vh;
+    }
 
-.whatsapp{
-    transform: scale(0.5);
-    
-}
+    .whatsapp{
+        transform: scale(0.5);
+        
+    }
 
-.carritoImg{
-    margin: 0;
-    padding: 0;    
-    transform: scale(0.5);
-    bottom: 10px;
-    right: 10px;
-}
+    .carritoImg{
+        margin: 0;
+        padding: 0;    
+        transform: scale(0.5);
+        bottom: 10px;
+        right: 10px;
+    }
+    //resoponsive productos
+
+    .productos{
+        
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        display: grid;
+        grid-template-columns: auto ;
+        grid-template-rows: auto auto auto auto auto auto;
+        
+
+
+        gap: 2rem;
+    }
+
+    //responsive carruito
+
+    .imagenArt{
+        img{
+            display: none;
+        }
+    }
 
 }
 
